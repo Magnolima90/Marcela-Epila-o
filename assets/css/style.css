@@ -686,6 +686,26 @@ section { position: relative; }
   color: var(--color-text-soft);
 }
 
+/* ---------- Vídeo em destaque ---------- */
+.video-highlight {
+  max-width: 420px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+.video-highlight video {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  background: var(--color-white);
+  display: block;
+}
+.video-caption {
+  margin-top: 16px;
+  font-size: 0.86rem;
+  font-style: italic;
+  color: var(--color-text-soft);
+}
+
 /* ---------- Differentials ---------- */
 .differentials {
   padding: 120px 0;
