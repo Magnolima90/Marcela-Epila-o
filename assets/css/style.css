@@ -291,25 +291,26 @@ section { position: relative; }
   line-height: 1.1;
 }
 .brand-logo-frame {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 16px;
+  width: 176px;
+  height: 92px;
+  overflow: hidden;
   border-radius: 16px;
   background: #fffdfb;
   box-shadow: 0 8px 22px -8px rgba(90, 63, 43, 0.3);
   transition: all var(--transition);
+  flex-shrink: 0;
 }
 :root[data-theme="dark"] .brand-logo-frame {
   box-shadow: 0 8px 22px -8px rgba(0, 0, 0, 0.55);
 }
 .brand-logo {
-  height: 92px;
-  width: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 52%;
   display: block;
-  transition: height var(--transition);
 }
-.header.scrolled .brand-logo-frame { padding: 5px 12px; }
-.header.scrolled .brand-logo { height: 58px; }
+.header.scrolled .brand-logo-frame { width: 112px; height: 58px; }
 
 .brand-name {
   font-family: var(--font-heading);
@@ -1122,8 +1123,8 @@ section { position: relative; }
   .nav-overlay.active { opacity: 1; pointer-events: auto; }
 
   .header .btn-primary.btn-sm { display: none; }
-  .brand-logo { height: 68px; }
-  .header.scrolled .brand-logo { height: 52px; }
+  .brand-logo-frame { width: 132px; height: 68px; }
+  .header.scrolled .brand-logo-frame { width: 100px; height: 52px; }
 
   .hero .container { grid-template-columns: 1fr; text-align: center; }
   .hero-content { display: flex; flex-direction: column; align-items: center; }
@@ -1151,8 +1152,8 @@ section { position: relative; }
   .form-row { grid-template-columns: 1fr; }
   .contact-form { padding: 28px; }
   .hero { padding-top: 150px; }
-  .brand-logo { height: 58px; }
-  .header.scrolled .brand-logo { height: 46px; }
+  .brand-logo-frame { width: 112px; height: 58px; }
+  .header.scrolled .brand-logo-frame { width: 88px; height: 46px; }
   section, .about, .services, .differentials, .benefits, .gallery, .testimonials, .cta, .contact, .footer {
     padding-top: 80px;
     padding-bottom: 80px;
